@@ -5,10 +5,6 @@ package paquete04o;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author reroes
- */
 public class Principal {
     public static void main(String[] args) {
         TransporteBus bus = new TransporteBus();
@@ -24,11 +20,21 @@ public class Principal {
         t1.establecerCooperativaTransvia("Rutas Loja");
         t1.establecerTarifa();
         
+        TransporteAereo aereo = new TransporteAereo();
+        aereo.establecerCooperativaAereo("Americas");
+        aereo.establecerTarifa();
+        
+        TransporteMaritimo mar = new TransporteMaritimo();
+        mar.establecerCooperativaMaritima("Titanic");
+        mar.establecerTarifa();
+        
         TiposTransporte tipos = new TiposTransporte();
         ArrayList<Transporte> lista = new ArrayList<>();
         lista.add(bus);
         lista.add(taxi);
         lista.add(t1);
+        lista.add(aereo);
+        lista.add(mar);
         tipos.establecerTransportes(lista);
         tipos.establecerPromedioTarifas();
         
