@@ -25,6 +25,24 @@ public class Principal {
         gp2.establecerUrl("http://api.movie?api=");
         System.out.println(gp2.obtenerUrl());
         
+        System.out.println("---------------------------");
         
+        APIDisneyPlus apiD = new APIDisneyPlus();
+        apiD.establecerApiKey("123455");
+        
+        GeneradorPeliculas gp3 = new GeneradorPeliculas();
+        gp3.establecerLlave(apiD);
+        gp3.establecerUrl("http://api.movie?api=");
+        System.out.println(gp3.obtenerUrl());
+        
+        System.out.println("---------------------------");
+        
+        APIDgo apiDgo = new APIDgo();
+        apiDgo.establecerApiKey("123455");
+        
+        GeneradorPeliculas gp4 = new GeneradorPeliculas();
+        gp4.establecerLlave(apiDgo);
+        gp4.establecerUrl("http://api.movie?api=");
+        System.out.println(gp4.obtenerUrl());
     }
 }
