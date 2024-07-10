@@ -10,7 +10,7 @@ package paquete08i;
  * @author reroes
  */
 public class EvaluacionEnsayo implements EvaluacionTipoDos {
-
+    //implements se lo usa para trabajar con interfases
     private int numeroProblemas;
     private double totalProblemas;
     protected double promedioEnsayo;
@@ -32,7 +32,11 @@ public class EvaluacionEnsayo implements EvaluacionTipoDos {
         return totalProblemas;
     }
     
-    
+    /*
+    para poder usar este tipo de metodos es neseasrio poner la palabra implements
+    y usar obligaatoriamente los metodos que tienen esas clases implementadas
+    con interfases
+    */
     @Override
     public void establecerPromedioEnsayo() {
 
